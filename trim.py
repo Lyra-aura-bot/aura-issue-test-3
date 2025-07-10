@@ -3,4 +3,7 @@ def trim_spaces(s):
     i = 0
     while i < len(s) and s[i] == ' ':
         i += 1
-    return s[i:]
+    j = len(s) - 1
+    while j >= 0 and s[j] == ' ':
+        j -= 1
+    return s[i:j+1]
